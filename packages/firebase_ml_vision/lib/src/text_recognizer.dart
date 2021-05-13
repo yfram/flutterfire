@@ -115,10 +115,13 @@ class CloudTextRecognizerOptions {
 
 /// Recognized text in an image.
 class VisionText {
-  VisionText._(Map<String, dynamic> data)
-      : text = data['text'],
-        blocks = List<TextBlock>.unmodifiable(data['blocks']
-            .map<TextBlock>((dynamic block) => TextBlock._(block)));
+  VisionText._(Map<Object?, Object?> data)
+      : text = data['text'] as String?,
+        blocks = List<TextBlock>.unmodifiable(
+          (data['blocks']! as List<Object>)
+              .cast<Map<Object?, Object?>>()
+              .map<TextBlock>((block) => TextBlock._(block)),
+        );
 
   /// String representation of the recognized text.
   final String? text;
@@ -129,25 +132,30 @@ class VisionText {
 
 /// Abstract class representing dimensions of recognized text in an image.
 abstract class TextContainer {
-  TextContainer._(Map<dynamic, dynamic> data)
+  TextContainer._(Map<Object?, Object?> data)
       : boundingBox = data['left'] != null
             ? Rect.fromLTWH(
-                data['left'],
-                data['top'],
-                data['width'],
-                data['height'],
+                data['left']! as double,
+                data['top']! as double,
+                data['width']! as double,
+                data['height']! as double,
               )
             : null,
-        confidence = data['confidence']?.toDouble(),
+        confidence = (data['confidence'] as num?)?.toDouble(),
         cornerPoints = List<Offset>.unmodifiable(
-            data['points'].map<Offset>((dynamic point) => Offset(
-                  point[0],
-                  point[1],
-                ))),
+          (data['points']! as List<Object?>)
+              .cast<List<Object>>()
+              .map<Offset>((point) => Offset(
+                    point[0] as double,
+                    point[1] as double,
+                  )),
+        ),
         recognizedLanguages = List<RecognizedLanguage>.unmodifiable(
-            data['recognizedLanguages'].map<RecognizedLanguage>(
-                (dynamic language) => RecognizedLanguage._(language))),
-        text = data['text'];
+          (data['recognizedLanguages']! as List<Object?>)
+              .cast<Map<Object?, Object?>>()
+              .map((language) => RecognizedLanguage._(language)),
+        ),
+        text = data['text'] as String?;
 
   /// Axis-aligned bounding rectangle of the detected text.
   ///
@@ -185,9 +193,12 @@ abstract class TextContainer {
 
 /// A block of text (think of it as a paragraph) as deemed by the OCR engine.
 class TextBlock extends TextContainer {
-  TextBlock._(Map<dynamic, dynamic> block)
+  TextBlock._(Map<Object?, Object?> block)
       : lines = List<TextLine>.unmodifiable(
-            block['lines'].map<TextLine>((dynamic line) => TextLine._(line))),
+          (block['lines']! as List<Object>)
+              .cast<Map<Object?, Object?>>()
+              .map<TextLine>((line) => TextLine._(line)),
+        ),
         super._(block);
 
   /// The contents of the text block, broken down into individual lines.
@@ -197,8 +208,11 @@ class TextBlock extends TextContainer {
 /// Represents a line of text.
 class TextLine extends TextContainer {
   TextLine._(Map<dynamic, dynamic> line)
-      : elements = List<TextElement>.unmodifiable(line['elements']
-            .map<TextElement>((dynamic element) => TextElement._(element))),
+      : elements = List<TextElement>.unmodifiable(
+          (line['elements'] as List<Object?>)
+              .cast<Map<Object?, Object?>>()
+              .map<TextElement>((element) => TextElement._(element)),
+        ),
         super._(line);
 
   /// The contents of this line, broken down into individual elements.
@@ -213,5 +227,5 @@ class TextLine extends TextContainer {
 /// If a word is split between two lines by a hyphen, each part is encoded as a
 /// separate element.
 class TextElement extends TextContainer {
-  TextElement._(Map<dynamic, dynamic> element) : super._(element);
+  TextElement._(Map<Object?, Object?> element) : super._(element);
 }

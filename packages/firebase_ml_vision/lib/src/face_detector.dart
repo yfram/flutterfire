@@ -153,44 +153,51 @@ class FaceDetectorOptions {
 
 /// Represents a face detected by [FaceDetector].
 class Face {
-  Face._(dynamic data)
+  Face._(Map<String, Object> data)
       : boundingBox = Rect.fromLTWH(
-          data['left'],
-          data['top'],
-          data['width'],
-          data['height'],
+          data['left']! as double,
+          data['top']! as double,
+          data['width']! as double,
+          data['height']! as double,
         ),
-        headEulerAngleY = data['headEulerAngleY'],
-        headEulerAngleZ = data['headEulerAngleZ'],
-        leftEyeOpenProbability = data['leftEyeOpenProbability'],
-        rightEyeOpenProbability = data['rightEyeOpenProbability'],
-        smilingProbability = data['smilingProbability'],
-        trackingId = data['trackingId'],
+        headEulerAngleY = data['headEulerAngleY'] as double?,
+        headEulerAngleZ = data['headEulerAngleZ'] as double?,
+        leftEyeOpenProbability = data['leftEyeOpenProbability'] as double?,
+        rightEyeOpenProbability = data['rightEyeOpenProbability'] as double?,
+        smilingProbability = data['smilingProbability'] as double?,
+        trackingId = data['trackingId'] as int?,
         _landmarks = Map<FaceLandmarkType, FaceLandmark?>.fromIterables(
             FaceLandmarkType.values,
             FaceLandmarkType.values.map((FaceLandmarkType type) {
-          final List<dynamic>? pos = data['landmarks'][_enumToString(type)];
-          return (pos == null)
-              ? null
-              : FaceLandmark._(
-                  type,
-                  Offset(pos[0], pos[1]),
-                );
+          return data['landmarks']
+              .safeCast<Map<Object?, Object?>>()
+              .guard<FaceLandmark?>((landmarks) {
+            final pos = landmarks[_enumToString(type)] as List<Object?>?;
+            if (pos == null) return null;
+
+            return FaceLandmark._(
+              type,
+              Offset(pos[0]! as double, pos[1]! as double),
+            );
+          });
         })),
         _contours = Map<FaceContourType, FaceContour?>.fromIterables(
             FaceContourType.values,
             FaceContourType.values.map((FaceContourType type) {
-          /// added empty map to pass the tests
-          final List<dynamic>? arr =
-              (data['contours'] ?? <String, dynamic>{})[_enumToString(type)];
-          return (arr == null)
-              ? null
-              : FaceContour._(
-                  type,
-                  arr
-                      .map<Offset>((dynamic pos) => Offset(pos[0], pos[1]))
-                      .toList(),
-                );
+          return data['contours']
+              .safeCast<Map<Object, Object>>()
+              .guard<FaceContour?>((contours) {
+            final arr = contours[_enumToString(type)] as List<Object>?;
+            if (arr == null) return null;
+
+            return FaceContour._(type, [
+              for (final pos in arr.cast<List<Object?>>())
+                Offset(
+                  pos[0]! as double,
+                  pos[1]! as double,
+                )
+            ]);
+          });
         }));
 
   final Map<FaceLandmarkType, FaceLandmark?> _landmarks;

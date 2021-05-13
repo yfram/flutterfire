@@ -970,7 +970,7 @@ void runQueryTests() {
 
         expect(snapshot.docs.length, equals(2));
         snapshot.docs.forEach((doc) {
-          expect(doc.data()['foo'] > rand, isTrue);
+          expect(doc.data()['foo'] as num > rand, isTrue);
         });
       });
 
@@ -999,7 +999,7 @@ void runQueryTests() {
 
         expect(snapshot.docs.length, equals(3));
         snapshot.docs.forEach((doc) {
-          expect(doc.data()['foo'] >= rand, isTrue);
+          expect(doc.data()['foo'] as num >= rand, isTrue);
         });
       });
 
@@ -1025,7 +1025,7 @@ void runQueryTests() {
 
         expect(snapshot.docs.length, equals(2));
         snapshot.docs.forEach((doc) {
-          expect(doc.data()['foo'] < rand, isTrue);
+          expect(doc.data()['foo'] as num < rand, isTrue);
         });
       });
 
@@ -1054,7 +1054,7 @@ void runQueryTests() {
 
         expect(snapshot.docs.length, equals(3));
         snapshot.docs.forEach((doc) {
-          expect(doc.data()['foo'] <= rand, isTrue);
+          expect(doc.data()['foo'] as num <= rand, isTrue);
         });
       });
 

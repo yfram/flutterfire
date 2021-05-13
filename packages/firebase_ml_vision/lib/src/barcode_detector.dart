@@ -203,11 +203,12 @@ class BarcodeDetector {
         'options': <String, dynamic>{
           'barcodeFormats': options.barcodeFormats.value,
         },
-      }..addAll(visionImage._serialize()),
+        ...visionImage._serialize(),
+      },
     );
 
     final List<Barcode> barcodes =
-        reply!.map((barcode) => Barcode._(barcode)).toList();
+        reply!.map((barcode) => Barcode._fromJson(barcode)).toList();
 
     return barcodes;
   }
@@ -244,44 +245,104 @@ class BarcodeDetectorOptions {
 // TODO(bparrishMines): Normalize default string values. Some values return null on iOS while Android returns empty string.
 /// Represents a single recognized barcode and its value.
 class Barcode {
-  Barcode._(Map<dynamic, dynamic> _data)
-      : boundingBox = _data['left'] != null
-            ? Rect.fromLTWH(
-                _data['left'],
-                _data['top'],
-                _data['width'],
-                _data['height'],
-              )
-            : null,
-        rawValue = _data['rawValue'],
-        displayValue = _data['displayValue'],
-        format = BarcodeFormat._(_data['format']),
-        _cornerPoints = _data['points']
-            ?.map<Offset>((dynamic item) => Offset(
-                  item[0],
-                  item[1],
-                ))
-            ?.toList(),
-        valueType = BarcodeValueType.values[_data['valueType']],
-        email = _data['email'] == null ? null : BarcodeEmail._(_data['email']),
-        phone = _data['phone'] == null ? null : BarcodePhone._(_data['phone']),
-        sms = _data['sms'] == null ? null : BarcodeSMS._(_data['sms']),
-        url = _data['url'] == null ? null : BarcodeURLBookmark._(_data['url']),
-        wifi = _data['wifi'] == null ? null : BarcodeWiFi._(_data['wifi']),
-        geoPoint = _data['geoPoint'] == null
-            ? null
-            : BarcodeGeoPoint._(_data['geoPoint']),
-        contactInfo = _data['contactInfo'] == null
-            ? null
-            : BarcodeContactInfo._(_data['contactInfo']),
-        calendarEvent = _data['calendarEvent'] == null
-            ? null
-            : BarcodeCalendarEvent._(_data['calendarEvent']),
-        driverLicense = _data['driverLicense'] == null
-            ? null
-            : BarcodeDriverLicense._(_data['driverLicense']);
+  Barcode._({
+    required this.cornerPoints,
+    required this.boundingBox,
+    required this.rawValue,
+    required this.displayValue,
+    required this.format,
+    required this.valueType,
+    required this.email,
+    required this.phone,
+    required this.sms,
+    required this.url,
+    required this.wifi,
+    required this.geoPoint,
+    required this.contactInfo,
+    required this.calendarEvent,
+    required this.driverLicense,
+  });
 
-  final List<Offset> _cornerPoints;
+  factory Barcode._fromJson(Map<Object?, Object?> json) {
+    assert(json.containsKey('format'), 'missing key `format`');
+    assert(json.containsKey('valueType'), 'missing key `valueType`');
+    assert(json.containsKey('valueType'), 'missing key `valueType`');
+    assert(json.containsKey('points'), 'missing key `points`');
+
+    return Barcode._(
+      cornerPoints: (json['points']! as List<Object?>)
+          .cast<List<Object?>>()
+          .map<Offset>((item) => Offset(
+                item[0]! as double,
+                item[1]! as double,
+              ))
+          .toList(),
+      boundingBox: json['left'] != null
+          ? Rect.fromLTWH(
+              json['left']! as double,
+              json['top']! as double,
+              json['width']! as double,
+              json['height']! as double,
+            )
+          : null,
+      rawValue: json['rawValue'] as String?,
+      displayValue: json['displayValue'] as String?,
+      format: BarcodeFormat._(json['format']! as int),
+      valueType: BarcodeValueType.values[json['valueType']! as int],
+      email: json['email']
+          .safeCast<Map<Object?, Object?>>()
+          .guard((value) => BarcodeEmail._(value)),
+      phone: json['phone']
+          .safeCast<Map<Object?, Object?>>()
+          .guard((value) => BarcodePhone._(value)),
+      sms: json['sms']
+          .safeCast<Map<Object?, Object?>>()
+          .guard((value) => BarcodeSMS._(value)),
+      url: json['url']
+          .safeCast<Map<Object?, Object?>>()
+          .guard((value) => BarcodeURLBookmark._(value)),
+      wifi: json['wifi']
+          .safeCast<Map<Object?, Object?>>()
+          .guard((value) => BarcodeWiFi._(value)),
+      geoPoint: json['geoPoint']
+          .safeCast<Map<Object?, Object?>>()
+          .guard((value) => BarcodeGeoPoint._(value)),
+      contactInfo: json['contactInfo']
+          .safeCast<Map<Object?, Object?>>()
+          .guard((value) => BarcodeContactInfo._(value)),
+      calendarEvent: json['calendarEvent']
+          .safeCast<Map<Object?, Object?>>()
+          .guard((value) => BarcodeCalendarEvent._(value)),
+      driverLicense: json['driverLicense']
+          .safeCast<Map<Object?, Object?>>()
+          .guard((value) => BarcodeDriverLicense._(value)),
+    );
+  }
+
+  // Barcode._(Map<Object, Object> _data)
+  //     : boundingBox = ,
+  //       rawValue = json['rawValue'],
+  //       displayValue = json['displayValue'],
+  //       format = BarcodeFormat._(json['format']),
+  //       _cornerPoints = ,
+  //       valueType = BarcodeValueType.values[json['valueType']],
+  //       email = json['email'] == null ? null : BarcodeEmail._(json['email']),
+  //       phone = json['phone'] == null ? null : BarcodePhone._(json['phone']),
+  //       sms = json['sms'] == null ? null : BarcodeSMS._(json['sms']),
+  //       url = json['url'] == null ? null : BarcodeURLBookmark._(json['url']),
+  //       wifi = json['wifi'] == null ? null : BarcodeWiFi._(json['wifi']),
+  //       geoPoint = json['geoPoint'] == null
+  //           ? null
+  //           : BarcodeGeoPoint._(json['geoPoint']),
+  //       contactInfo = json['contactInfo'] == null
+  //           ? null
+  //           : BarcodeContactInfo._(json['contactInfo']),
+  //       calendarEvent = json['calendarEvent'] == null
+  //           ? null
+  //           : BarcodeCalendarEvent._(json['calendarEvent']),
+  //       driverLicense = json['driverLicense'] == null
+  //           ? null
+  //           : BarcodeDriverLicense._(json['driverLicense']);
 
   /// The bounding rectangle of the detected barcode.
   ///
@@ -314,7 +375,7 @@ class Barcode {
   /// The four corner points in clockwise direction starting with top-left.
   ///
   /// Due to the possible perspective distortions, this is not necessarily a rectangle.
-  List<Offset> get cornerPoints => List<Offset>.from(_cornerPoints);
+  final List<Offset> cornerPoints;
 
   /// The format type of the barcode value.
   ///
@@ -455,29 +516,37 @@ class BarcodeGeoPoint {
 
 /// A person's or organization's business card.
 class BarcodeContactInfo {
-  BarcodeContactInfo._(Map<dynamic, dynamic> data)
-      : addresses = data['addresses'] == null
-            ? null
-            : List<BarcodeAddress>.unmodifiable(data['addresses']
-                .map<BarcodeAddress>((dynamic item) => BarcodeAddress._(item))),
-        emails = data['emails'] == null
-            ? null
-            : List<BarcodeEmail>.unmodifiable(data['emails']
-                .map<BarcodeEmail>((dynamic item) => BarcodeEmail._(item))),
-        name = data['name'] == null ? null : BarcodePersonName._(data['name']),
-        phones = data['phones'] == null
-            ? null
-            : List<BarcodePhone>.unmodifiable(data['phones']
-                .map<BarcodePhone>((dynamic item) => BarcodePhone._(item))),
-        urls = data['urls'] == null
-            ? null
-            : List<String>.unmodifiable(
-                data['urls'].map<String>((dynamic item) {
-                final String s = item;
-                return s;
-              })),
-        jobTitle = data['jobTitle'],
-        organization = data['organization'];
+  BarcodeContactInfo._(Map<Object?, Object?> data)
+      : addresses =
+            data['addresses'].safeCast<List<Object?>>().guard((addresses) {
+          return List<BarcodeAddress>.unmodifiable(
+            addresses
+                .cast<Map<Object?, Object?>>()
+                .map<BarcodeAddress>((item) => BarcodeAddress._(item)),
+          );
+        }),
+        emails = data['emails'].safeCast<List<Object?>>().guard((emails) {
+          return List<BarcodeEmail>.unmodifiable(
+            emails
+                .cast<Map<Object?, Object?>>()
+                .map<BarcodeEmail>((item) => BarcodeEmail._(item)),
+          );
+        }),
+        name = data['name']
+            .safeCast<Map<Object?, Object?>>()
+            .guard((name) => BarcodePersonName._(name)),
+        phones = data['phones'].safeCast<List<Object?>>().guard((phones) {
+          return List<BarcodePhone>.unmodifiable(
+            phones.map<BarcodePhone>((dynamic item) => BarcodePhone._(item)),
+          );
+        }),
+        urls = data['urls'].safeCast<List<Object?>>().guard((phones) {
+          return List<String>.unmodifiable(
+            (data['urls']! as List<Object?>).cast<String>(),
+          );
+        }),
+        jobTitle = data['jobTitle'] as String?,
+        organization = data['organization'] as String?;
 
   /// Contact person's addresses.
   ///
@@ -509,13 +578,11 @@ class BarcodeContactInfo {
 
 /// An address.
 class BarcodeAddress {
-  BarcodeAddress._(Map<dynamic, dynamic> data)
+  BarcodeAddress._(Map<Object?, Object?> data)
       : addressLines = List<String>.unmodifiable(
-            data['addressLines'].map<String>((dynamic item) {
-          final String s = item;
-          return s;
-        })),
-        type = BarcodeAddressType.values[data['type']];
+          (data['addressLines']! as List<Object?>).cast<String>(),
+        ),
+        type = BarcodeAddressType.values[data['type']! as int];
 
   /// Formatted address, multiple lines when appropriate.
   ///

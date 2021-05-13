@@ -94,6 +94,8 @@ void main() {
           throw PlatformException(code: 'UNKNOWN');
         }
 
+        final arguments = call.arguments as Map<Object?, Object?>;
+
         switch (call.method) {
           case 'Auth#registerIdTokenListener':
             const String name = 'idTokenChannel';
@@ -107,17 +109,20 @@ void main() {
             return <String, dynamic>{'user': user};
           case 'Auth#signInWithEmailAndPassword':
             user = generateUser(
-                user, <String, dynamic>{'email': call.arguments['email']});
+                user, <String, dynamic>{'email': arguments['email']});
             return <String, dynamic>{'user': user};
           case 'User#updateProfile':
             Map<String, dynamic> previousUser = user;
             user = generateUser(
-                user, Map<String, dynamic>.from(call.arguments['profile']));
+              user,
+              Map<String, dynamic>.from(arguments['profile']! as Map),
+            );
             return previousUser;
           case 'User#updatePhoneNumber':
             Map<String, dynamic> previousUser = user;
-            user = generateUser(
-                user, <String, dynamic>{'phoneNumber': kMockNewPhoneNumber});
+            user = generateUser(user, <String, dynamic>{
+              'phoneNumber': kMockNewPhoneNumber,
+            });
             return previousUser;
           case 'User#updatePassword':
           case 'User#updateEmail':
@@ -125,10 +130,10 @@ void main() {
           case 'User#sendPasswordResetEmail':
             Map<String, dynamic> previousUser = user;
             user = generateUser(
-                user, <String, dynamic>{'email': call.arguments['newEmail']});
+                user, <String, dynamic>{'email': arguments['newEmail']});
             return previousUser;
           case 'User#getIdToken':
-            if (call.arguments['tokenOnly'] == false) {
+            if (arguments['tokenOnly'] == false) {
               return kMockIdTokenResult;
             }
             return <String, dynamic>{'token': kMockIdToken};

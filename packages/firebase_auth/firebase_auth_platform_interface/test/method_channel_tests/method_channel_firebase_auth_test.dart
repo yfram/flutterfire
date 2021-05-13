@@ -109,6 +109,8 @@ void main() {
           throw PlatformException(code: 'UNKNOWN');
         }
 
+        final arguments = call.arguments as Map<Object?, Object?>;
+
         switch (call.method) {
           case 'Auth#registerIdTokenListener':
             const String name = 'idTokenChannel';
@@ -126,7 +128,9 @@ void main() {
           case 'Auth#signInWithEmailLink':
           case 'Auth#signInWithEmailAndPassword':
             user = generateUser(
-                user, <String, dynamic>{'email': call.arguments['email']});
+              user,
+              <String, dynamic>{'email': arguments['email']},
+            );
             return <String, dynamic>{
               'user': user,
               'additionalUserInfo': kMockAdditionalUserInfo
@@ -141,14 +145,15 @@ void main() {
             };
           case 'Auth#signInWithCredential':
             user = generateUser(user, <String, dynamic>{
-              'email': call.arguments['credential']['email'],
+              'email':
+                  (arguments['credential']! as Map<Object?, Object?>)['email'],
             });
             return <String, dynamic>{
               'user': user,
               'additionalUserInfo': kMockAdditionalUserInfo
             };
           case 'Auth#verifyPasswordResetCode':
-            return <String, dynamic>{'email': call.arguments['code']};
+            return <String, dynamic>{'email': arguments['code']};
           case 'Auth#verifyPhoneNumber':
             const String name = 'phoneNumberVerifier';
             handleEventChannel(name, log);
@@ -159,9 +164,7 @@ void main() {
               'data': kMockActionCodeInfoData,
             };
           case 'Auth#setLanguageCode':
-            return <String, dynamic>{
-              'languageCode': call.arguments['languageCode']
-            };
+            return <String, dynamic>{'languageCode': arguments['languageCode']};
           case 'Auth#setSettings':
             return null;
           case 'Auth#fetchSignInMethodsForEmail':

@@ -39,7 +39,9 @@ void testsMain() {
       final ordered = testDocuments.map((doc) => doc['value'] as int).toList();
       ordered.sort();
 
-      final documents = event.snapshot.value.values
+      final documents = (event.snapshot.value as Map)
+          .values
+          .cast<Map>()
           .map((doc) => doc['value'] as int)
           .toList();
 
@@ -56,11 +58,11 @@ void testsMain() {
       final int value = snapshot.value ?? 0;
       final TransactionResult transactionResult =
           await ref.runTransaction((MutableData mutableData) async {
-        mutableData.value = (mutableData.value ?? 0) + 1;
+        mutableData.value = (mutableData.value as num ?? 0) + 1;
         return mutableData;
       });
       expect(transactionResult.committed, true);
-      expect(transactionResult.dataSnapshot.value > value, true);
+      expect(transactionResult.dataSnapshot.value as num > value, true);
     });
 
     test('setPersistenceCacheSizeBytes Integer', () async {

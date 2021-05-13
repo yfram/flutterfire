@@ -69,6 +69,7 @@ void main() {
                   ),
                 ),
                 (data) {
+                  // ignore: avoid_dynamic_calls
                   updatedValue = channel.codec
                       .decodeEnvelope(data!)['value']
                       .cast<String, dynamic>();
@@ -283,7 +284,9 @@ void main() {
             .reference()
             .child('foo')
             .runTransaction((MutableData mutableData) {
+          // ignore: avoid_dynamic_calls
           mutableData.value['fakeKey'] =
+              // ignore: avoid_dynamic_calls
               'updated ${mutableData.value['fakeKey']}';
           return Future.value(mutableData);
         });
@@ -503,7 +506,7 @@ void main() {
         // Subscribe and allow subscription to complete.
         final StreamSubscription<Event> subscription =
             query.onValue.listen((_) {}, onError: errors.add);
-        await Future<void>.delayed(const Duration());
+        await Future<void>.delayed(Duration.zero);
 
         await simulateError('Bad foo');
         await simulateError('Bad bar');
@@ -544,7 +547,7 @@ void main() {
         // Subscribe and allow subscription to complete.
         final StreamSubscription<Event> subscription =
             query.onValue.listen(events.add);
-        await Future<void>.delayed(const Duration());
+        await Future<void>.delayed(Duration.zero);
 
         await simulateEvent('1');
         await simulateEvent('2');
@@ -557,7 +560,7 @@ void main() {
 
         // Cancel subscription and allow cancellation to complete.
         await subscription.cancel();
-        await Future<void>.delayed(const Duration());
+        await Future<void>.delayed(Duration.zero);
 
         expect(
           log,

@@ -449,8 +449,7 @@ class _JsonQuery implements Query<Map<String, dynamic>> {
       'endBefore() or endBeforeDocument() before calling orderBy()',
     );
 
-    final List<List<dynamic>> orders =
-        List<List<dynamic>>.from(parameters['orderBy']);
+    final orders = List<List<Object?>>.from(parameters['orderBy']);
 
     assert(
       orders.where((List<dynamic> item) => field == item[0]).isEmpty,
@@ -465,13 +464,12 @@ class _JsonQuery implements Query<Map<String, dynamic>> {
       orders.add([fieldPath, descending]);
     }
 
-    final List<List<dynamic>> conditions =
-        List<List<dynamic>>.from(parameters['where']);
+    final conditions = List<List<Object?>>.from(parameters['where']);
 
     if (conditions.isNotEmpty) {
-      for (final dynamic condition in conditions) {
-        dynamic field = condition[0];
-        String operator = condition[1];
+      for (final condition in conditions) {
+        Object? field = condition[0];
+        String operator = condition[1]! as String;
 
         // Initial orderBy() parameter has to match every where() fieldPath parameter when
         // inequality operator is invoked
@@ -483,8 +481,8 @@ class _JsonQuery implements Query<Map<String, dynamic>> {
           );
         }
 
-        for (final dynamic order in orders) {
-          dynamic orderField = order[0];
+        for (final order in orders) {
+          Object? orderField = order[0];
 
           // Any where() fieldPath parameter cannot match any orderBy() parameter when
           // '==' operand is invoked
@@ -657,7 +655,7 @@ class _JsonQuery implements Query<Map<String, dynamic>> {
 
     // Once all conditions have been set, we must now check them to ensure the
     // query is valid.
-    for (final dynamic condition in conditions) {
+    for (final condition in conditions) {
       dynamic field = condition[0]; // FieldPath or FieldPathType
       String operator = condition[1];
       dynamic value = condition[2];
