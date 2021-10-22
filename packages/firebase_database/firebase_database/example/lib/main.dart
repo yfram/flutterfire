@@ -14,6 +14,11 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final FirebaseApp app = await Firebase.initializeApp();
 
+  final database = FirebaseDatabase.instance;
+  final s = await database.ref('ordered').orderByChild('value').get();
+  print(s.value);
+  return;
+
   runApp(
     MaterialApp(
       title: 'Flutter Database Example',
