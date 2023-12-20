@@ -1,0 +1,1003 @@
+repo_name: yfram/flutterfire
+report_id: 1f5a752181374e8f59aa986ffaadede2
+version: 0.1
+repo_type: Public
+timestamp: '2023-12-20T09:16:53+00:00'
+requested_by: JohnBellSageCom
+provider: github
+branch: master
+detected_tools_count: 88
+tools:
+- name: Dart
+  description: A new web programming language with libraries, a virtual machine, and
+    tools
+  website_url: https://www.dartlang.org/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1646/Twitter-02.png
+  detection_source: Repo Metadata
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source: Repo Metadata
+- name: Objective-C
+  description: The primary programming language you use when writing software for
+    OS X and iOS
+  website_url: https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1008/xcode.png
+  detection_source: Repo Metadata
+- name: Ruby
+  description: A dynamic, interpreted, open source programming language with a focus
+    on simplicity and productivity
+  website_url: https://www.ruby-lang.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/989/ruby.png
+  detection_source: Repo Metadata
+- name: Swift
+  description: 'An innovative new programming language for Cocoa and Cocoa Touch. '
+  website_url: https://developer.apple.com/swift/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1009/tuHsaI2U.png
+  detection_source: Repo Metadata
+- name: TypeScript
+  description: A superset of JavaScript that compiles to clean JavaScript output
+  website_url: http://www.typescriptlang.org
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source: Repo Metadata
+- name: Android SDK
+  description: An SDK that provides you the API libraries and developer tools necessary
+    to build, test, and debug apps for Android.
+  website_url: http://developer.android.com
+  version: '29.0'
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1010/m8jf0po4imu8t5eemjdd.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_storage/firebase_storage/example/android/app/build.gradle
+  detection_source: packages/firebase_storage/firebase_storage/example/android/app/build.gradle
+  last_updated_by: Arthur Thompson
+  last_updated_on: 2019-12-02 23:09:20.000000000 Z
+- name: Flutter
+  description: Cross-platform mobile framework from Google
+  website_url: https://flutter.io/
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Cross-Platform Mobile Development
+  image_url: https://img.stackshare.io/service/7180/flutter-mark-square-100.png
+  detection_source: packages/cloud_firestore/cloud_firestore/example/pubspec.yaml
+  last_updated_by: Mike Diarmid
+  last_updated_on: 2021-02-25 18:28:40.000000000 Z
+- name: React
+  description: A JavaScript library for building user interfaces
+  website_url: https://reactjs.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/1020/OYIaJ1KK.png
+  detection_source: website/package.json
+  last_updated_by: Salakar
+  last_updated_on: 2021-05-17 09:24:56.000000000 Z
+- name: React Router
+  description: A complete routing solution for React.js
+  website_url: https://github.com/rackt/react-router
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: JavaScript Framework Components
+  image_url: https://img.stackshare.io/service/3350/8261421.png
+  detection_source: website/package.json
+  last_updated_by: Salakar
+  last_updated_on: 2021-05-17 09:24:56.000000000 Z
+- name: Sass
+  description: Syntactically Awesome Style Sheets
+  website_url: http://sass-lang.com/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/1171/jCR2zNJV.png
+  detection_source: website/package.json
+  last_updated_by: Elliot Hesp
+  last_updated_on: 2020-07-10 14:54:44.000000000 Z
+- name: Firebase
+  description: The Realtime App Platform
+  website_url: https://firebase.google.com/
+  open_source: false
+  hosted_saas: true
+  category: Application Hosting
+  sub_category: Realtime Backend / API
+  image_url: https://img.stackshare.io/service/116/cZLxNFZS.jpg
+  detection_source: ".github/workflows/scripts/functions/package.json"
+  last_updated_by: Elliot Hesp
+  last_updated_on: 2020-11-25 00:14:52.000000000 Z
+- name: pgvector
+  description: Open-source vector similarity search for Postgres
+  website_url: https://github.com/pgvector/pgvector/
+  open_source: false
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Database Tools
+  image_url: https://img.stackshare.io/service/109221/default_b888cdf5617d936aa6aacf130911906955508639.png
+  detection_source: packages/firebase_ml_custom/example/assets/labels_mobilenet_v1_224.txt
+  last_updated_by: Polina Govorkova
+  last_updated_on: 2020-08-07 21:13:18.000000000 Z
+- name: Dotenv
+  description: Loads environment variables from .env for Nodejs projects
+  website_url: https://github.com/motdotla/dotenv
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Server Configuration and Automation
+  image_url: https://img.stackshare.io/service/8067/default_90dcb1286af7685c68df319c764b80704df1155b.png
+  detection_source: website/package.json
+  last_updated_by: Salakar
+  last_updated_on: 2021-05-17 09:24:56.000000000 Z
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source: website/.eslintrc
+  last_updated_by: Elliot Hesp
+  last_updated_on: 2020-07-10 14:54:44.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source: ".github/workflows/all_plugins.yaml"
+  last_updated_by: Kevin Moore
+  last_updated_on: 2021-06-05 22:22:51.000000000 Z
+- name: Gradle
+  description: A powerful build system for the JVM
+  website_url: https://www.gradle.org/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Java Build Tools
+  image_url: https://img.stackshare.io/service/975/gradlephant-social-black-bg.png
+  detection_source: packages/cloud_firestore/cloud_firestore/android/build.gradle
+  last_updated_by: Julian Steenbakker
+  last_updated_on: 2021-10-07 14:05:47.000000000 Z
+- name: Prettier
+  description: 'Prettier is an opinionated code formatter. '
+  website_url: https://prettier.io/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg
+  detection_source: website/package.json
+  last_updated_by: Mike Diarmid
+  last_updated_on: 2021-05-18 12:32:45.000000000 Z
+- name: Visual Studio Code
+  description: Build and debug modern web and cloud applications, by Microsoft
+  website_url: https://code.visualstudio.com/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Text Editor
+  image_url: https://img.stackshare.io/service/4202/Visual_Studio_Code_logo.png
+  detection_source: ".vscode/tasks.json"
+  last_updated_by: Mike Diarmid
+  last_updated_on: 2020-07-07 15:38:48.000000000 Z
+- name: Yarn
+  description: A new package manager for JavaScript
+  website_url: https://yarnpkg.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/5848/44mC-kJ3.jpg
+  detection_source: website/yarn.lock
+  last_updated_by: Elliot Hesp
+  last_updated_on: 2020-07-10 14:54:44.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source: website/package.json
+  last_updated_by: Elliot Hesp
+  last_updated_on: 2020-07-10 14:54:44.000000000 Z
+- name: Android OS
+  description: An open source mobile operating system by Google
+  website_url: https://www.android.com
+  version: '10.0'
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Operating Systems
+  image_url: https://img.stackshare.io/service/9586/ZvmtaSXW_400x400.jpg
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_storage/firebase_storage/example/android/app/build.gradle
+  detection_source: packages/firebase_storage/firebase_storage/example/android/app/build.gradle
+  last_updated_by: Arthur Thompson
+  last_updated_on: 2019-12-02 23:09:20.000000000 Z
+- name: CocoaPods
+  description: A dependency manager for Swift and Objective-C Cocoa projects
+  website_url: https://cocoapods.org/
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: CocoaPods Packages
+  image_url: https://img.stackshare.io/service/2426/e1cbdef9d4b11484049a033886578e54_400x400.png
+  detection_source: packages/firebase_admob/ios/firebase_admob.podspec
+  last_updated_by: Hans Muller
+  last_updated_on: 2017-07-13 17:22:37.000000000 Z
+- name: LangChain
+  description: Build AI apps with LLMs through composability
+  website_url: https://github.com/hwchase17/langchain
+  open_source: true
+  hosted_saas: false
+  category: Communications
+  sub_category: Large Language Model Tools
+  image_url: https://img.stackshare.io/service/48790/default_5b6c6b73f1ff3775c85d2a1ba954cb87e30cbf13.jpg
+  detection_source: packages/firebase_ml_custom/example/assets/labels_mobilenet_v1_224.txt
+  last_updated_by: Polina Govorkova
+  last_updated_on: 2020-08-07 21:13:18.000000000 Z
+- name: Lodash
+  description: A JavaScript utility library
+  website_url: https://lodash.com
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/2438/lodash.png
+  detection_source: website/package.json
+  last_updated_by: Elliot Hesp
+  last_updated_on: 2020-07-10 14:54:44.000000000 Z
+- name: axios
+  description: Promise based HTTP client for the browser and node.js
+  website_url: https://github.com/mzabriskie/axios
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source: website/package.json
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-09-29 09:10:04.000000000 Z
+- name: js
+  website_url: www.js.com
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/5588/jscom.png
+  detection_source: packages/cloud_firestore/cloud_firestore_web/pubspec.yaml
+  last_updated_by: Amr Yousef
+  last_updated_on: 2020-02-10 20:05:21.000000000 Z
+- name: async
+  description: Utility functions and classes related to the 'dart:async' library
+  package_url: https://pub.dartlang.org/async
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_app_check/firebase_app_check/pubspec.yaml
+  last_updated_by: Mike Diarmid
+  last_updated_on: 2021-05-18 12:32:45.000000000 Z
+- name: camera
+  description: A Flutter plugin for controlling the camera
+  package_url: https://pub.dartlang.org/camera
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_ml_vision/example/pubspec.yaml
+  last_updated_by: Panmari
+  last_updated_on: 2021-03-31 08:44:41.000000000 Z
+- name: cloud_firestore
+  description: Flutter plugin for Cloud Firestore
+  package_url: https://pub.dartlang.org/cloud_firestore
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/cloud_firestore/cloud_firestore/example/pubspec.yaml
+  last_updated_by: Salakar
+  last_updated_on: 2021-02-02 22:03:09.000000000 Z
+- name: cloud_functions
+  description: A Flutter plugin allowing you to use Firebase Cloud Functions
+  package_url: https://pub.dartlang.org/cloud_functions
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/cloud_functions/cloud_functions/example/pubspec.yaml
+  last_updated_by: Mike Diarmid
+  last_updated_on: 2021-01-19 12:04:55.000000000 Z
+- name: collection
+  description: Collections and utilities functions and classes related to collections
+  package_url: https://pub.dartlang.org/collection
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/cloud_firestore/cloud_firestore/pubspec.yaml
+  last_updated_by: Remi Rousselet
+  last_updated_on: 2021-08-13 13:31:03.000000000 Z
+- name: cupertino_icons
+  description: Default icons asset for Cupertino widgets based on Apple styled icons
+  package_url: https://pub.dartlang.org/cupertino_icons
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/cloud_functions/cloud_functions/example/pubspec.yaml
+  last_updated_by: Mike Diarmid
+  last_updated_on: 2021-01-19 12:04:55.000000000 Z
+- name: e2e
+  description: Runs tests that use the flutter_test API as integration tests
+  package_url: https://pub.dartlang.org/e2e
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_admob/example/pubspec.yaml
+  last_updated_by: Hans Muller
+  last_updated_on: 2017-07-13 17:22:37.000000000 Z
+- name: firebase
+  description: Firebase libraries for Dart on the web and server
+  package_url: https://pub.dartlang.org/firebase
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_performance/firebase_performance_web/pubspec.yaml
+  last_updated_by: Salakar
+  last_updated_on: 2021-10-21 20:56:49.000000000 Z
+- name: firebase_admob
+  description: Flutter plugin for Firebase AdMob
+  package_url: https://pub.dartlang.org/firebase_admob
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_admob/example/pubspec.yaml
+  last_updated_by: Hans Muller
+  last_updated_on: 2017-07-13 17:22:37.000000000 Z
+- name: firebase_analytics
+  description: Flutter plugin for Google Analytics for Firebase
+  package_url: https://pub.dartlang.org/firebase_analytics
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_analytics/firebase_analytics/example/pubspec.yaml
+  last_updated_by: Russell Wheatley
+  last_updated_on: 2021-11-01 11:39:50.000000000 Z
+- name: firebase_auth
+  description: Flutter plugin for Firebase Auth
+  package_url: https://pub.dartlang.org/firebase_auth
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_auth/firebase_auth/example/pubspec.yaml
+  last_updated_by: Remi Rousselet
+  last_updated_on: 2021-01-21 12:20:40.000000000 Z
+- name: firebase_auth_platform_interface
+  description: A common platform interface for the firebase_auth plugin
+  package_url: https://pub.dartlang.org/firebase_auth_platform_interface
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_auth/firebase_auth/pubspec.yaml
+  last_updated_by: Salakar
+  last_updated_on: 2021-10-21 20:56:49.000000000 Z
+- name: firebase_auth_web
+  description: The web implementation of firebase_auth
+  package_url: https://pub.dartlang.org/firebase_auth_web
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_auth/firebase_auth/pubspec.yaml
+  last_updated_by: Salakar
+  last_updated_on: 2021-10-21 20:56:49.000000000 Z
+- name: firebase_core_platform_interface
+  description: A common platform interface for the firebase_core plugin
+  package_url: https://pub.dartlang.org/firebase_core_platform_interface
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/cloud_firestore/cloud_firestore/pubspec.yaml
+  last_updated_by: Salakar
+  last_updated_on: 2021-10-21 20:56:49.000000000 Z
+- name: firebase_core_web
+  description: The web implementation of firebase_core
+  package_url: https://pub.dartlang.org/firebase_core_web
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/cloud_firestore/cloud_firestore_web/pubspec.yaml
+  last_updated_by: Salakar
+  last_updated_on: 2021-10-21 20:56:49.000000000 Z
+- name: firebase_crashlytics
+  description: Flutter plugin for Firebase Crashlytics
+  package_url: https://pub.dartlang.org/firebase_crashlytics
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_crashlytics/firebase_crashlytics/example/pubspec.yaml
+  last_updated_by: Russell Wheatley
+  last_updated_on: 2021-04-06 09:47:53.000000000 Z
+- name: firebase_database
+  description: Flutter plugin for Firebase Database
+  package_url: https://pub.dartlang.org/firebase_database
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_database/firebase_database/example/pubspec.yaml
+  last_updated_by: Deepak Goyal
+  last_updated_on: 2021-09-14 17:08:33.000000000 Z
+- name: firebase_dynamic_links
+  description: Flutter plugin for Google Dynamic Links for Firebase
+  package_url: https://pub.dartlang.org/firebase_dynamic_links
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_auth/firebase_auth/example/pubspec.yaml
+  last_updated_by: Remi Rousselet
+  last_updated_on: 2021-01-21 12:20:40.000000000 Z
+- name: firebase_in_app_messaging
+  description: Flutter plugin for Firebase In-App Messaging
+  package_url: https://pub.dartlang.org/firebase_in_app_messaging
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_in_app_messaging/example/pubspec.yaml
+  last_updated_by: Remi Rousselet
+  last_updated_on: 2021-03-08 10:47:00.000000000 Z
+- name: firebase_messaging
+  description: Flutter plugin for Firebase Cloud Messaging
+  package_url: https://pub.dartlang.org/firebase_messaging
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_messaging/firebase_messaging/example/pubspec.yaml
+  last_updated_by: Salakar
+  last_updated_on: 2021-02-02 21:38:34.000000000 Z
+- name: firebase_ml_vision
+  description: Flutter plugin for Firebase machine learning vision services
+  package_url: https://pub.dartlang.org/firebase_ml_vision
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_ml_vision/example/pubspec.yaml
+  last_updated_by: Remi Rousselet
+  last_updated_on: 2021-03-05 12:09:55.000000000 Z
+- name: firebase_performance
+  description: Flutter plugin for Google Performance Monitoring for Firebase
+  package_url: https://pub.dartlang.org/firebase_performance
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_performance/firebase_performance/example/pubspec.yaml
+  last_updated_by: yalunqin
+  last_updated_on: 2021-09-07 11:33:39.000000000 Z
+- name: firebase_remote_config
+  description: Flutter plugin for Firebase Remote Config
+  package_url: https://pub.dartlang.org/firebase_remote_config
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_remote_config/firebase_remote_config/example/pubspec.yaml
+  last_updated_by: Mike Diarmid
+  last_updated_on: 2021-11-01 11:41:27.000000000 Z
+- name: firebase_storage
+  description: Flutter plugin for Firebase Cloud Storage
+  package_url: https://pub.dartlang.org/firebase_storage
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_storage/firebase_storage/example/pubspec.yaml
+  last_updated_by: Mike Diarmid
+  last_updated_on: 2021-02-18 11:45:12.000000000 Z
+- name: flutter
+  description: Visit flutter.io to get started
+  package_url: https://pub.dartlang.org/flutter
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/cloud_firestore/cloud_firestore/example/pubspec.yaml
+  last_updated_by: Mike Diarmid
+  last_updated_on: 2021-02-25 18:28:40.000000000 Z
+- name: flutter_local_notifications
+  description: A cross platform plugin for displaying and scheduling local notifications
+    for Flutter applications with the ability to customise for each platform
+  package_url: https://pub.dartlang.org/flutter_local_notifications
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_messaging/firebase_messaging/example/pubspec.yaml
+  last_updated_by: Mais Alheraki
+  last_updated_on: 2021-09-13 09:51:33.000000000 Z
+- name: flutter_signin_button
+  description: A Flutter plugin for iOS and Android for generating signin buttons
+    for different social media account
+  package_url: https://pub.dartlang.org/flutter_signin_button
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_auth/firebase_auth/example/pubspec.yaml
+  last_updated_by: Mais Alheraki
+  last_updated_on: 2021-10-05 11:39:24.000000000 Z
+- name: http
+  description: A composable
+  package_url: https://pub.dartlang.org/http
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/cloud_firestore/cloud_firestore/example/pubspec.yaml
+  last_updated_by: Russell Wheatley
+  last_updated_on: 2021-05-18 09:42:16.000000000 Z
+- name: http_parser
+  description: A platform-independent package for parsing and serializing HTTP formats
+  package_url: https://pub.dartlang.org/http_parser
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_auth/firebase_auth_web/pubspec.yaml
+  last_updated_by: Remi Rousselet
+  last_updated_on: 2021-05-06 11:40:40.000000000 Z
+- name: image_picker
+  description: Flutter plugin for selecting images from the Android and iOS image
+    library
+  package_url: https://pub.dartlang.org/image_picker
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_ml_custom/example/pubspec.yaml
+  last_updated_by: Salakar
+  last_updated_on: 2021-05-10 12:40:01.000000000 Z
+- name: intl
+  description: Contains code to deal with internationalized/localized messages
+  package_url: https://pub.dartlang.org/intl
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_auth/firebase_auth_web/pubspec.yaml
+  last_updated_by: Mike Diarmid
+  last_updated_on: 2021-02-25 17:02:08.000000000 Z
+- name: js
+  description: Annotations to create static Dart interfaces for JavaScript APIs
+  package_url: https://pub.dartlang.org/js
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/cloud_firestore/cloud_firestore_web/pubspec.yaml
+  last_updated_by: Amr Yousef
+  last_updated_on: 2020-02-10 20:05:21.000000000 Z
+- name: meta
+  description: Annotations used to express developer intentions that can't otherwise
+    be deduced by statically analyzing source code
+  package_url: https://pub.dartlang.org/meta
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/cloud_firestore/cloud_firestore/pubspec.yaml
+  last_updated_by: Mike Diarmid
+  last_updated_on: 2021-02-25 17:02:08.000000000 Z
+- name: mockito
+  description: A mock framework inspired by Mockito with APIs for Fakes
+  package_url: https://pub.dartlang.org/mockito
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/cloud_firestore/cloud_firestore/pubspec.yaml
+  last_updated_by: Mike Diarmid
+  last_updated_on: 2021-02-25 17:02:08.000000000 Z
+- name: path
+  description: A string-based path manipulation library
+  package_url: https://pub.dartlang.org/path
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_ml_vision/example/pubspec.yaml
+  last_updated_by: Alex Hartford
+  last_updated_on: 2021-04-13 15:32:45.000000000 Z
+- name: path_provider
+  description: Flutter plugin for getting commonly used locations on host platform
+    file systems
+  package_url: https://pub.dartlang.org/path_provider
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_ml_custom/example/pubspec.yaml
+  last_updated_by: Remi Rousselet
+  last_updated_on: 2021-03-08 09:57:13.000000000 Z
+- name: pedantic
+  description: The Dart analyzer settings and best practices used internally at Google
+  package_url: https://pub.dartlang.org/pedantic
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_analytics/firebase_analytics/example/pubspec.yaml
+  last_updated_by: Remi Rousselet
+  last_updated_on: 2021-03-05 12:47:14.000000000 Z
+- name: plugin_platform_interface
+  description: Reusable base class for platform interfaces of Flutter federated plugins
+  package_url: https://pub.dartlang.org/plugin_platform_interface
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/cloud_firestore/cloud_firestore_platform_interface/pubspec.yaml
+  last_updated_by: russellwheatley
+  last_updated_on: 2021-05-10 15:00:13.000000000 Z
+- name: stack_trace
+  description: A package for manipulating stack traces and printing them readably
+  package_url: https://pub.dartlang.org/stack_trace
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_crashlytics/firebase_crashlytics/pubspec.yaml
+  last_updated_by: Mike Diarmid
+  last_updated_on: 2021-02-25 17:02:08.000000000 Z
+- name: test
+  description: A full featured library for writing and running Dart tests across platforms
+  package_url: https://pub.dartlang.org/test
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/cloud_firestore/cloud_firestore/example/pubspec.yaml
+  last_updated_by: Collin Jackson
+  last_updated_on: 2019-03-15 18:38:15.000000000 Z
+- name: url_launcher
+  description: Flutter plugin for launching a URL
+  package_url: https://pub.dartlang.org/url_launcher
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: packages/firebase_dynamic_links/example/pubspec.yaml
+  last_updated_by: Alex Hartford
+  last_updated_on: 2021-03-25 12:29:56.000000000 Z
+- name: "@types/classnames"
+  description: TypeScript definitions for classnames
+  package_url: https://www.npmjs.com/@types/classnames
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16431/default_aa91da3cee4d961f0eea8ca5de77f399ec7ec794.png
+  detection_source: website/package.json
+  last_updated_by: Salakar
+  last_updated_on: 2021-05-17 09:36:19.000000000 Z
+- name: "@types/lodash.get"
+  description: TypeScript definitions for lodash.get
+  package_url: https://www.npmjs.com/@types/lodash.get
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18297/default_678ce8b19e8cee1dde03f165f62525a2c9d0c034.png
+  detection_source: website/package.json
+  last_updated_by: Salakar
+  last_updated_on: 2021-05-17 09:36:19.000000000 Z
+- name: "@types/react"
+  description: TypeScript definitions for React
+  package_url: https://www.npmjs.com/@types/react
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15894/default_1d65e37e65b7f80761374f0202776043277d505d.png
+  detection_source: website/package.json
+  last_updated_by: Salakar
+  last_updated_on: 2021-05-17 09:36:19.000000000 Z
+- name: "@types/react-router-dom"
+  description: TypeScript definitions for React Router
+  package_url: https://www.npmjs.com/@types/react-router-dom
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16557/default_d522554c6a41cb28d922d6d3ad32ad4afa0e3bb5.png
+  detection_source: website/package.json
+  last_updated_by: Salakar
+  last_updated_on: 2021-05-17 09:36:19.000000000 Z
+- name: "@typescript-eslint/eslint-plugin"
+  description: TypeScript plugin for ESLint
+  package_url: https://www.npmjs.com/@typescript-eslint/eslint-plugin
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15982/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
+  detection_source: website/package.json
+  last_updated_by: Salakar
+  last_updated_on: 2021-05-17 09:36:19.000000000 Z
+- name: "@typescript-eslint/parser"
+  description: An ESLint custom parser which leverages TypeScript ESTree
+  package_url: https://www.npmjs.com/@typescript-eslint/parser
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15980/default_732016a20524708efe7a4c77497fe9bfeea19ba6.png
+  detection_source: website/package.json
+  last_updated_by: Salakar
+  last_updated_on: 2021-05-17 09:36:19.000000000 Z
+- name: classnames
+  description: A simple utility for conditionally joining classNames together
+  package_url: https://www.npmjs.com/classnames
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15942/default_4040fefea2f98006727f63d042275b96a275ab2d.png
+  detection_source: website/package.json
+  last_updated_by: Salakar
+  last_updated_on: 2021-05-17 09:24:56.000000000 Z
+- name: compare-versions
+  description: Compare semver version strings to find greater
+  package_url: https://www.npmjs.com/compare-versions
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18084/image.png
+  detection_source: website/package.json
+  last_updated_by: Salakar
+  last_updated_on: 2021-05-17 09:36:19.000000000 Z
+- name: eslint-config-prettier
+  description: Turns off all rules that are unnecessary or might conflict with Prettier
+  package_url: https://www.npmjs.com/eslint-config-prettier
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15879/default_0b10af8ca19c215f781dc07442e75bdc831089d0.png
+  detection_source: website/package.json
+  last_updated_by: Mike Diarmid
+  last_updated_on: 2021-05-18 12:32:45.000000000 Z
+- name: eslint-plugin-prettier
+  description: Runs prettier as an eslint rule
+  package_url: https://www.npmjs.com/eslint-plugin-prettier
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15896/default_6e6e1d6bb189c8bb26c6410618bd597979578f39.png
+  detection_source: website/package.json
+  last_updated_by: Mike Diarmid
+  last_updated_on: 2021-05-18 12:32:45.000000000 Z
+- name: eslint-plugin-react
+  description: React specific linting rules for ESLint
+  package_url: https://www.npmjs.com/eslint-plugin-react
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15817/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source: website/package.json
+  last_updated_by: Salakar
+  last_updated_on: 2021-05-17 09:36:19.000000000 Z
+- name: firebase-admin
+  description: Firebase admin SDK for Node.js
+  package_url: https://www.npmjs.com/firebase-admin
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17151/default_21a9522c66101ebad0e63609af74acb35fe29a0a.png
+  detection_source: ".github/workflows/scripts/functions/package.json"
+  last_updated_by: Elliot Hesp
+  last_updated_on: 2020-11-25 00:14:52.000000000 Z
+- name: lodash.get
+  description: The lodash method `_.get` exported as a module
+  package_url: https://www.npmjs.com/lodash.get
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16377/default_b5c8f3c8e46d368f74a982d06d7f13291fe651ea.png
+  detection_source: website/package.json
+  last_updated_by: Elliot Hesp
+  last_updated_on: 2020-07-10 14:54:44.000000000 Z
+- name: react-dom
+  description: React package for working with the DOM
+  package_url: https://www.npmjs.com/react-dom
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15808/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source: website/package.json
+  last_updated_by: Salakar
+  last_updated_on: 2021-05-17 09:24:56.000000000 Z
+- name: react-router-dom
+  description: DOM bindings for React Router
+  package_url: https://www.npmjs.com/react-router-dom
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16025/default_e25d1fbb04a118c79fb444294461417342bd03bf.png
+  detection_source: website/package.json
+  last_updated_by: Salakar
+  last_updated_on: 2021-05-17 09:24:56.000000000 Z
+- name: FlutterMacOS
+  description: A UI toolkit for beautiful and fast apps
+  package_url: https://cocoapods.org/pods/FlutterMacOS
+  license: ''
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: CocoaPods Packages
+  image_url: https://img.stackshare.io/package/cocoapods/image.png
+  detection_source: packages/cloud_firestore/cloud_firestore/macos/cloud_firestore.podspec
+  last_updated_by: Salakar
+  last_updated_on: 2021-05-14 12:40:54.000000000 Z
+- name: Google-Mobile-Ads-SDK
+  description: Monetize your mobile applications with Google ads
+  package_url: https://cocoapods.org/pods/Google-Mobile-Ads-SDK
+  license: ''
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: CocoaPods Packages
+  image_url: https://img.stackshare.io/package/cocoapods/image.png
+  detection_source: packages/firebase_admob/ios/firebase_admob.podspec
+  last_updated_by: Salakar
+  last_updated_on: 2021-05-12 08:24:34.000000000 Z
+- name: junit:junit
+  description: JUnit is a unit testing framework for Java
+  license: EPL-1.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source: packages/cloud_firestore/cloud_firestore/example/android/app/build.gradle
+  last_updated_by: Julian Steenbakker
+  last_updated_on: 2021-10-07 14:05:47.000000000 Z
