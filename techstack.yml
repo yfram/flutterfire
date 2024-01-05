@@ -2,7 +2,7 @@ repo_name: yfram/flutterfire
 report_id: 1f5a752181374e8f59aa986ffaadede2
 version: 0.1
 repo_type: Public
-timestamp: '2023-12-20T09:16:53+00:00'
+timestamp: '2024-01-05T08:20:06+00:00'
 requested_by: JohnBellSageCom
 provider: github
 branch: master
@@ -17,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1646/Twitter-02.png
+  detection_source_url: https://github.com/yfram/flutterfire
   detection_source: Repo Metadata
 - name: Java
   description: A concurrent, class-based, object-oriented, language specifically designed
@@ -27,6 +28,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source_url: https://github.com/yfram/flutterfire
   detection_source: Repo Metadata
 - name: JavaScript
   description: Lightweight, interpreted, object-oriented language with first-class
@@ -37,6 +39,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/yfram/flutterfire
   detection_source: Repo Metadata
 - name: Objective-C
   description: The primary programming language you use when writing software for
@@ -47,6 +50,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1008/xcode.png
+  detection_source_url: https://github.com/yfram/flutterfire
   detection_source: Repo Metadata
 - name: Ruby
   description: A dynamic, interpreted, open source programming language with a focus
@@ -57,6 +61,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/989/ruby.png
+  detection_source_url: https://github.com/yfram/flutterfire
   detection_source: Repo Metadata
 - name: Swift
   description: 'An innovative new programming language for Cocoa and Cocoa Touch. '
@@ -67,6 +72,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1009/tuHsaI2U.png
+  detection_source_url: https://github.com/yfram/flutterfire
   detection_source: Repo Metadata
 - name: TypeScript
   description: A superset of JavaScript that compiles to clean JavaScript output
@@ -77,6 +83,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source_url: https://github.com/yfram/flutterfire
   detection_source: Repo Metadata
 - name: Android SDK
   description: An SDK that provides you the API libraries and developer tools necessary
@@ -101,6 +108,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Cross-Platform Mobile Development
   image_url: https://img.stackshare.io/service/7180/flutter-mark-square-100.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/cloud_firestore/cloud_firestore/example/pubspec.yaml
   detection_source: packages/cloud_firestore/cloud_firestore/example/pubspec.yaml
   last_updated_by: Mike Diarmid
   last_updated_on: 2021-02-25 18:28:40.000000000 Z
@@ -113,6 +121,7 @@ tools:
   category: Libraries
   sub_category: Javascript UI Libraries
   image_url: https://img.stackshare.io/service/1020/OYIaJ1KK.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: Salakar
   last_updated_on: 2021-05-17 09:24:56.000000000 Z
@@ -125,6 +134,7 @@ tools:
   category: Libraries
   sub_category: JavaScript Framework Components
   image_url: https://img.stackshare.io/service/3350/8261421.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: Salakar
   last_updated_on: 2021-05-17 09:24:56.000000000 Z
@@ -137,6 +147,7 @@ tools:
   category: Languages & Frameworks
   sub_category: CSS Pre-processors / Extensions
   image_url: https://img.stackshare.io/service/1171/jCR2zNJV.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: Elliot Hesp
   last_updated_on: 2020-07-10 14:54:44.000000000 Z
@@ -148,6 +159,7 @@ tools:
   category: Application Hosting
   sub_category: Realtime Backend / API
   image_url: https://img.stackshare.io/service/116/cZLxNFZS.jpg
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/.github/workflows/scripts/functions/package.json
   detection_source: ".github/workflows/scripts/functions/package.json"
   last_updated_by: Elliot Hesp
   last_updated_on: 2020-11-25 00:14:52.000000000 Z
@@ -159,6 +171,7 @@ tools:
   category: Data Stores
   sub_category: Database Tools
   image_url: https://img.stackshare.io/service/109221/default_b888cdf5617d936aa6aacf130911906955508639.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_ml_custom/example/assets/labels_mobilenet_v1_224.txt
   detection_source: packages/firebase_ml_custom/example/assets/labels_mobilenet_v1_224.txt
   last_updated_by: Polina Govorkova
   last_updated_on: 2020-08-07 21:13:18.000000000 Z
@@ -171,6 +184,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Server Configuration and Automation
   image_url: https://img.stackshare.io/service/8067/default_90dcb1286af7685c68df319c764b80704df1155b.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: Salakar
   last_updated_on: 2021-05-17 09:24:56.000000000 Z
@@ -183,6 +197,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/.eslintrc
   detection_source: website/.eslintrc
   last_updated_by: Elliot Hesp
   last_updated_on: 2020-07-10 14:54:44.000000000 Z
@@ -194,6 +209,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/yfram/flutterfire
   detection_source: Repo Metadata
 - name: GitHub Actions
   description: Automate your workflow from idea to production
@@ -203,6 +219,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/.github/workflows/all_plugins.yaml
   detection_source: ".github/workflows/all_plugins.yaml"
   last_updated_by: Kevin Moore
   last_updated_on: 2021-06-05 22:22:51.000000000 Z
@@ -215,6 +232,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Java Build Tools
   image_url: https://img.stackshare.io/service/975/gradlephant-social-black-bg.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/cloud_firestore/cloud_firestore/android/build.gradle
   detection_source: packages/cloud_firestore/cloud_firestore/android/build.gradle
   last_updated_by: Julian Steenbakker
   last_updated_on: 2021-10-07 14:05:47.000000000 Z
@@ -227,6 +245,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: Mike Diarmid
   last_updated_on: 2021-05-18 12:32:45.000000000 Z
@@ -239,6 +258,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Text Editor
   image_url: https://img.stackshare.io/service/4202/Visual_Studio_Code_logo.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/.vscode/tasks.json
   detection_source: ".vscode/tasks.json"
   last_updated_by: Mike Diarmid
   last_updated_on: 2020-07-07 15:38:48.000000000 Z
@@ -250,6 +270,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/5848/44mC-kJ3.jpg
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/yarn.lock
   detection_source: website/yarn.lock
   last_updated_by: Elliot Hesp
   last_updated_on: 2020-07-10 14:54:44.000000000 Z
@@ -261,6 +282,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: Elliot Hesp
   last_updated_on: 2020-07-10 14:54:44.000000000 Z
@@ -285,6 +307,7 @@ tools:
   category: Libraries
   sub_category: CocoaPods Packages
   image_url: https://img.stackshare.io/service/2426/e1cbdef9d4b11484049a033886578e54_400x400.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_admob/ios/firebase_admob.podspec
   detection_source: packages/firebase_admob/ios/firebase_admob.podspec
   last_updated_by: Hans Muller
   last_updated_on: 2017-07-13 17:22:37.000000000 Z
@@ -296,6 +319,7 @@ tools:
   category: Communications
   sub_category: Large Language Model Tools
   image_url: https://img.stackshare.io/service/48790/default_5b6c6b73f1ff3775c85d2a1ba954cb87e30cbf13.jpg
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_ml_custom/example/assets/labels_mobilenet_v1_224.txt
   detection_source: packages/firebase_ml_custom/example/assets/labels_mobilenet_v1_224.txt
   last_updated_by: Polina Govorkova
   last_updated_on: 2020-08-07 21:13:18.000000000 Z
@@ -307,6 +331,7 @@ tools:
   category: Libraries
   sub_category: Javascript Utilities & Libraries
   image_url: https://img.stackshare.io/service/2438/lodash.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: Elliot Hesp
   last_updated_on: 2020-07-10 14:54:44.000000000 Z
@@ -319,6 +344,7 @@ tools:
   category: Libraries
   sub_category: Javascript Utilities & Libraries
   image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-09-29 09:10:04.000000000 Z
@@ -327,6 +353,7 @@ tools:
   open_source: false
   hosted_saas: false
   image_url: https://img.stackshare.io/service/5588/jscom.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/cloud_firestore/cloud_firestore_web/pubspec.yaml
   detection_source: packages/cloud_firestore/cloud_firestore_web/pubspec.yaml
   last_updated_by: Amr Yousef
   last_updated_on: 2020-02-10 20:05:21.000000000 Z
@@ -338,6 +365,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_app_check/firebase_app_check/pubspec.yaml
   detection_source: packages/firebase_app_check/firebase_app_check/pubspec.yaml
   last_updated_by: Mike Diarmid
   last_updated_on: 2021-05-18 12:32:45.000000000 Z
@@ -349,6 +377,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_ml_vision/example/pubspec.yaml
   detection_source: packages/firebase_ml_vision/example/pubspec.yaml
   last_updated_by: Panmari
   last_updated_on: 2021-03-31 08:44:41.000000000 Z
@@ -360,6 +389,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/cloud_firestore/cloud_firestore/example/pubspec.yaml
   detection_source: packages/cloud_firestore/cloud_firestore/example/pubspec.yaml
   last_updated_by: Salakar
   last_updated_on: 2021-02-02 22:03:09.000000000 Z
@@ -371,6 +401,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/cloud_functions/cloud_functions/example/pubspec.yaml
   detection_source: packages/cloud_functions/cloud_functions/example/pubspec.yaml
   last_updated_by: Mike Diarmid
   last_updated_on: 2021-01-19 12:04:55.000000000 Z
@@ -382,6 +413,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/cloud_firestore/cloud_firestore/pubspec.yaml
   detection_source: packages/cloud_firestore/cloud_firestore/pubspec.yaml
   last_updated_by: Remi Rousselet
   last_updated_on: 2021-08-13 13:31:03.000000000 Z
@@ -393,6 +425,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/cloud_functions/cloud_functions/example/pubspec.yaml
   detection_source: packages/cloud_functions/cloud_functions/example/pubspec.yaml
   last_updated_by: Mike Diarmid
   last_updated_on: 2021-01-19 12:04:55.000000000 Z
@@ -404,6 +437,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_admob/example/pubspec.yaml
   detection_source: packages/firebase_admob/example/pubspec.yaml
   last_updated_by: Hans Muller
   last_updated_on: 2017-07-13 17:22:37.000000000 Z
@@ -415,6 +449,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_performance/firebase_performance_web/pubspec.yaml
   detection_source: packages/firebase_performance/firebase_performance_web/pubspec.yaml
   last_updated_by: Salakar
   last_updated_on: 2021-10-21 20:56:49.000000000 Z
@@ -426,6 +461,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_admob/example/pubspec.yaml
   detection_source: packages/firebase_admob/example/pubspec.yaml
   last_updated_by: Hans Muller
   last_updated_on: 2017-07-13 17:22:37.000000000 Z
@@ -437,6 +473,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_analytics/firebase_analytics/example/pubspec.yaml
   detection_source: packages/firebase_analytics/firebase_analytics/example/pubspec.yaml
   last_updated_by: Russell Wheatley
   last_updated_on: 2021-11-01 11:39:50.000000000 Z
@@ -448,6 +485,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_auth/firebase_auth/example/pubspec.yaml
   detection_source: packages/firebase_auth/firebase_auth/example/pubspec.yaml
   last_updated_by: Remi Rousselet
   last_updated_on: 2021-01-21 12:20:40.000000000 Z
@@ -459,6 +497,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_auth/firebase_auth/pubspec.yaml
   detection_source: packages/firebase_auth/firebase_auth/pubspec.yaml
   last_updated_by: Salakar
   last_updated_on: 2021-10-21 20:56:49.000000000 Z
@@ -470,6 +509,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_auth/firebase_auth/pubspec.yaml
   detection_source: packages/firebase_auth/firebase_auth/pubspec.yaml
   last_updated_by: Salakar
   last_updated_on: 2021-10-21 20:56:49.000000000 Z
@@ -481,6 +521,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/cloud_firestore/cloud_firestore/pubspec.yaml
   detection_source: packages/cloud_firestore/cloud_firestore/pubspec.yaml
   last_updated_by: Salakar
   last_updated_on: 2021-10-21 20:56:49.000000000 Z
@@ -492,6 +533,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/cloud_firestore/cloud_firestore_web/pubspec.yaml
   detection_source: packages/cloud_firestore/cloud_firestore_web/pubspec.yaml
   last_updated_by: Salakar
   last_updated_on: 2021-10-21 20:56:49.000000000 Z
@@ -503,6 +545,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_crashlytics/firebase_crashlytics/example/pubspec.yaml
   detection_source: packages/firebase_crashlytics/firebase_crashlytics/example/pubspec.yaml
   last_updated_by: Russell Wheatley
   last_updated_on: 2021-04-06 09:47:53.000000000 Z
@@ -514,6 +557,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_database/firebase_database/example/pubspec.yaml
   detection_source: packages/firebase_database/firebase_database/example/pubspec.yaml
   last_updated_by: Deepak Goyal
   last_updated_on: 2021-09-14 17:08:33.000000000 Z
@@ -525,6 +569,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_auth/firebase_auth/example/pubspec.yaml
   detection_source: packages/firebase_auth/firebase_auth/example/pubspec.yaml
   last_updated_by: Remi Rousselet
   last_updated_on: 2021-01-21 12:20:40.000000000 Z
@@ -536,6 +581,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_in_app_messaging/example/pubspec.yaml
   detection_source: packages/firebase_in_app_messaging/example/pubspec.yaml
   last_updated_by: Remi Rousselet
   last_updated_on: 2021-03-08 10:47:00.000000000 Z
@@ -547,6 +593,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_messaging/firebase_messaging/example/pubspec.yaml
   detection_source: packages/firebase_messaging/firebase_messaging/example/pubspec.yaml
   last_updated_by: Salakar
   last_updated_on: 2021-02-02 21:38:34.000000000 Z
@@ -558,6 +605,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_ml_vision/example/pubspec.yaml
   detection_source: packages/firebase_ml_vision/example/pubspec.yaml
   last_updated_by: Remi Rousselet
   last_updated_on: 2021-03-05 12:09:55.000000000 Z
@@ -569,6 +617,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_performance/firebase_performance/example/pubspec.yaml
   detection_source: packages/firebase_performance/firebase_performance/example/pubspec.yaml
   last_updated_by: yalunqin
   last_updated_on: 2021-09-07 11:33:39.000000000 Z
@@ -580,6 +629,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_remote_config/firebase_remote_config/example/pubspec.yaml
   detection_source: packages/firebase_remote_config/firebase_remote_config/example/pubspec.yaml
   last_updated_by: Mike Diarmid
   last_updated_on: 2021-11-01 11:41:27.000000000 Z
@@ -591,6 +641,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_storage/firebase_storage/example/pubspec.yaml
   detection_source: packages/firebase_storage/firebase_storage/example/pubspec.yaml
   last_updated_by: Mike Diarmid
   last_updated_on: 2021-02-18 11:45:12.000000000 Z
@@ -602,6 +653,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/cloud_firestore/cloud_firestore/example/pubspec.yaml
   detection_source: packages/cloud_firestore/cloud_firestore/example/pubspec.yaml
   last_updated_by: Mike Diarmid
   last_updated_on: 2021-02-25 18:28:40.000000000 Z
@@ -614,6 +666,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_messaging/firebase_messaging/example/pubspec.yaml
   detection_source: packages/firebase_messaging/firebase_messaging/example/pubspec.yaml
   last_updated_by: Mais Alheraki
   last_updated_on: 2021-09-13 09:51:33.000000000 Z
@@ -626,6 +679,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_auth/firebase_auth/example/pubspec.yaml
   detection_source: packages/firebase_auth/firebase_auth/example/pubspec.yaml
   last_updated_by: Mais Alheraki
   last_updated_on: 2021-10-05 11:39:24.000000000 Z
@@ -637,6 +691,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/cloud_firestore/cloud_firestore/example/pubspec.yaml
   detection_source: packages/cloud_firestore/cloud_firestore/example/pubspec.yaml
   last_updated_by: Russell Wheatley
   last_updated_on: 2021-05-18 09:42:16.000000000 Z
@@ -648,6 +703,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_auth/firebase_auth_web/pubspec.yaml
   detection_source: packages/firebase_auth/firebase_auth_web/pubspec.yaml
   last_updated_by: Remi Rousselet
   last_updated_on: 2021-05-06 11:40:40.000000000 Z
@@ -660,6 +716,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_ml_custom/example/pubspec.yaml
   detection_source: packages/firebase_ml_custom/example/pubspec.yaml
   last_updated_by: Salakar
   last_updated_on: 2021-05-10 12:40:01.000000000 Z
@@ -671,6 +728,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_auth/firebase_auth_web/pubspec.yaml
   detection_source: packages/firebase_auth/firebase_auth_web/pubspec.yaml
   last_updated_by: Mike Diarmid
   last_updated_on: 2021-02-25 17:02:08.000000000 Z
@@ -682,6 +740,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/cloud_firestore/cloud_firestore_web/pubspec.yaml
   detection_source: packages/cloud_firestore/cloud_firestore_web/pubspec.yaml
   last_updated_by: Amr Yousef
   last_updated_on: 2020-02-10 20:05:21.000000000 Z
@@ -694,6 +753,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/cloud_firestore/cloud_firestore/pubspec.yaml
   detection_source: packages/cloud_firestore/cloud_firestore/pubspec.yaml
   last_updated_by: Mike Diarmid
   last_updated_on: 2021-02-25 17:02:08.000000000 Z
@@ -705,6 +765,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/cloud_firestore/cloud_firestore/pubspec.yaml
   detection_source: packages/cloud_firestore/cloud_firestore/pubspec.yaml
   last_updated_by: Mike Diarmid
   last_updated_on: 2021-02-25 17:02:08.000000000 Z
@@ -716,6 +777,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_ml_vision/example/pubspec.yaml
   detection_source: packages/firebase_ml_vision/example/pubspec.yaml
   last_updated_by: Alex Hartford
   last_updated_on: 2021-04-13 15:32:45.000000000 Z
@@ -728,6 +790,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_ml_custom/example/pubspec.yaml
   detection_source: packages/firebase_ml_custom/example/pubspec.yaml
   last_updated_by: Remi Rousselet
   last_updated_on: 2021-03-08 09:57:13.000000000 Z
@@ -739,6 +802,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_analytics/firebase_analytics/example/pubspec.yaml
   detection_source: packages/firebase_analytics/firebase_analytics/example/pubspec.yaml
   last_updated_by: Remi Rousselet
   last_updated_on: 2021-03-05 12:47:14.000000000 Z
@@ -750,6 +814,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/cloud_firestore/cloud_firestore_platform_interface/pubspec.yaml
   detection_source: packages/cloud_firestore/cloud_firestore_platform_interface/pubspec.yaml
   last_updated_by: russellwheatley
   last_updated_on: 2021-05-10 15:00:13.000000000 Z
@@ -761,6 +826,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_crashlytics/firebase_crashlytics/pubspec.yaml
   detection_source: packages/firebase_crashlytics/firebase_crashlytics/pubspec.yaml
   last_updated_by: Mike Diarmid
   last_updated_on: 2021-02-25 17:02:08.000000000 Z
@@ -772,6 +838,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/cloud_firestore/cloud_firestore/example/pubspec.yaml
   detection_source: packages/cloud_firestore/cloud_firestore/example/pubspec.yaml
   last_updated_by: Collin Jackson
   last_updated_on: 2019-03-15 18:38:15.000000000 Z
@@ -783,6 +850,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_dynamic_links/example/pubspec.yaml
   detection_source: packages/firebase_dynamic_links/example/pubspec.yaml
   last_updated_by: Alex Hartford
   last_updated_on: 2021-03-25 12:29:56.000000000 Z
@@ -795,6 +863,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16431/default_aa91da3cee4d961f0eea8ca5de77f399ec7ec794.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: Salakar
   last_updated_on: 2021-05-17 09:36:19.000000000 Z
@@ -807,6 +876,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/18297/default_678ce8b19e8cee1dde03f165f62525a2c9d0c034.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: Salakar
   last_updated_on: 2021-05-17 09:36:19.000000000 Z
@@ -819,6 +889,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15894/default_1d65e37e65b7f80761374f0202776043277d505d.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: Salakar
   last_updated_on: 2021-05-17 09:36:19.000000000 Z
@@ -831,6 +902,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16557/default_d522554c6a41cb28d922d6d3ad32ad4afa0e3bb5.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: Salakar
   last_updated_on: 2021-05-17 09:36:19.000000000 Z
@@ -843,6 +915,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15982/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: Salakar
   last_updated_on: 2021-05-17 09:36:19.000000000 Z
@@ -855,6 +928,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15980/default_732016a20524708efe7a4c77497fe9bfeea19ba6.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: Salakar
   last_updated_on: 2021-05-17 09:36:19.000000000 Z
@@ -867,6 +941,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15942/default_4040fefea2f98006727f63d042275b96a275ab2d.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: Salakar
   last_updated_on: 2021-05-17 09:24:56.000000000 Z
@@ -879,6 +954,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/18084/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: Salakar
   last_updated_on: 2021-05-17 09:36:19.000000000 Z
@@ -891,6 +967,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15879/default_0b10af8ca19c215f781dc07442e75bdc831089d0.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: Mike Diarmid
   last_updated_on: 2021-05-18 12:32:45.000000000 Z
@@ -903,6 +980,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15896/default_6e6e1d6bb189c8bb26c6410618bd597979578f39.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: Mike Diarmid
   last_updated_on: 2021-05-18 12:32:45.000000000 Z
@@ -915,6 +993,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15817/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: Salakar
   last_updated_on: 2021-05-17 09:36:19.000000000 Z
@@ -927,6 +1006,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17151/default_21a9522c66101ebad0e63609af74acb35fe29a0a.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/.github/workflows/scripts/functions/package.json
   detection_source: ".github/workflows/scripts/functions/package.json"
   last_updated_by: Elliot Hesp
   last_updated_on: 2020-11-25 00:14:52.000000000 Z
@@ -939,6 +1019,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16377/default_b5c8f3c8e46d368f74a982d06d7f13291fe651ea.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: Elliot Hesp
   last_updated_on: 2020-07-10 14:54:44.000000000 Z
@@ -951,6 +1032,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15808/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: Salakar
   last_updated_on: 2021-05-17 09:24:56.000000000 Z
@@ -963,6 +1045,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16025/default_e25d1fbb04a118c79fb444294461417342bd03bf.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/website/package.json
   detection_source: website/package.json
   last_updated_by: Salakar
   last_updated_on: 2021-05-17 09:24:56.000000000 Z
@@ -975,6 +1058,7 @@ tools:
   category: Libraries
   sub_category: CocoaPods Packages
   image_url: https://img.stackshare.io/package/cocoapods/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/cloud_firestore/cloud_firestore/macos/cloud_firestore.podspec
   detection_source: packages/cloud_firestore/cloud_firestore/macos/cloud_firestore.podspec
   last_updated_by: Salakar
   last_updated_on: 2021-05-14 12:40:54.000000000 Z
@@ -987,6 +1071,7 @@ tools:
   category: Libraries
   sub_category: CocoaPods Packages
   image_url: https://img.stackshare.io/package/cocoapods/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/firebase_admob/ios/firebase_admob.podspec
   detection_source: packages/firebase_admob/ios/firebase_admob.podspec
   last_updated_by: Salakar
   last_updated_on: 2021-05-12 08:24:34.000000000 Z
@@ -998,6 +1083,7 @@ tools:
   category: Libraries
   sub_category: Maven Packages
   image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/yfram/flutterfire/blob/master/packages/cloud_firestore/cloud_firestore/example/android/app/build.gradle
   detection_source: packages/cloud_firestore/cloud_firestore/example/android/app/build.gradle
   last_updated_by: Julian Steenbakker
   last_updated_on: 2021-10-07 14:05:47.000000000 Z
